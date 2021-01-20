@@ -2,7 +2,25 @@
 
 This project was generated using [Nx](https://nx.dev).
 
-<p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+Commands executed during creation while following https://nxplaybook.com/
+
+```sh
+npx create-nx-workspace
+cd nxplaybook-org
+nx g @nrwl/react:app
+nx serve my-site
+nx g @nrwl/react:lib ui-header
+nx test ui-header
+nx g @nrwl/react:component --project=ui-header
+nx dep-graph
+nx serve my-site
+nx g @nrwl/express:app --help
+nx g @nrwl/express:app api --frontendProject=my-site
+nx serve my-site
+nx g @nrwl/workspace:lib api-interface
+nx serve my-site
+```
+
 
 🔎 **Nx is a set of Extensible Dev Tools for Monorepos.**
 
